@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Estadísticas')}"></head>
+<body>
+<nav th:replace="~{fragments/layout :: navbar}"></nav>
+
+<div class="container">
+    <h2 class="titulo-seccion mb-3">📊 Estadísticas por autor</h2>
+
+    <table class="table table-bordered table-hover bg-white align-middle">
+        <thead class="table-dark">
+        <tr>
+            <th>Autor</th>
+            <th>Libros</th>
+            <th>Ejemplares</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Autor</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<th:block th:replace="~{fragments/layout :: scripts}"></th:block>
+</body>
+</html>
